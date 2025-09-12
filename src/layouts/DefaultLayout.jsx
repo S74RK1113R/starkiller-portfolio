@@ -1,10 +1,8 @@
 import NavBar from '../components/NavBar'
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export default function DefaultLayout({children}) {
     return (
       <>    
-        <SpeedInsights/>
         <div className="relative h-screen flex flex-col items-center overflow-y">
             <NavBar />
 
