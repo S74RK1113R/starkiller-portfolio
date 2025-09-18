@@ -3,3 +3,6 @@
 body{
     @apply dark:bg-gray-900
 }
+b{
+    @apply uppercase;
+}
