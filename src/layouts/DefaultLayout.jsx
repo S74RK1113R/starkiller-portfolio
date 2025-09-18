@@ -2,7 +2,7 @@ import NavBar from '../components/NavBar'
 
 export default function DefaultLayout({children}) {
     return (   
-        <div className="relative h-screen flex flex-col items-center">
+        <div className="relative h-screen flex flex-col items-center overflow-y-auto">
             <NavBar />
 
             <main className="flex-1 w-full space-y-8 p-5 sm:max-w-8/12 mx-auto dark:bg-gray-900">
