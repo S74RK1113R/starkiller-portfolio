@@ -16,7 +16,7 @@ export default function Index() {
                     <h3 className="text-xl text-gray-800 dark:text-gray-400">Enfocado en la creación de sitios web atractivos y escalables con React.</h3>
 
                     <Button link={'https://github.com/S74RK1113R'}>
-                        Mí repositorio
+                        Repositorio
                     </Button>
                 </div>
             </Article>
@@ -55,14 +55,17 @@ export default function Index() {
                         Sobre mí
                     </b>
                     <p>
-
                         Soy desarrollador frontend web graduado de Ingeniería Informática, me gusta crear experiencias satisfactorias y sobre todo utilizar buenas prácticas al desarrollar.
                     </p>
                     <br/>
-                    <p>También me gusta el diseño gráfico, donde e realizado pequeñas tareas como personalización y creación de assets.</p>
+                    <p>
+                        También me gusta el diseño gráfico, donde he realizado pequeñas tareas como personalización y creación de assets.
+                    </p>
 
                     <br />
-                    <p>Disfruto de aprender técnologias nuevas y seguir mejorando cada día mis habilidades como desarrollador.</p>
+                    <p>
+                        Disfruto de aprender tecnologías nuevas y seguir mejorando cada día mis habilidades como desarrollador.
+                    </p>
                 </div>
             </Article>
         </DefaultLayout>
