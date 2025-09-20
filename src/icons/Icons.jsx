@@ -60,7 +60,6 @@ export const habilitiesIcons= [
         srcImg: tailwindcssIcon,
         description:'Ícono de Tailwindcss'
     },
-    
     {
         srcImg: viteJS,
         description:'Ícono de Vite'
