@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
     <button
       onClick={toggleTheme}
       aria-label="Cambiar tema"
-      className="bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center border-2 border-black dark:border-white dark:bg-gray-900"
+      className="bg-gray-100/10 w-10 h-10 rounded-full flex items-center justify-center border-2 border-black dark:border-white dark:bg-gray-900/10"
     >
       
       {isDark ? (

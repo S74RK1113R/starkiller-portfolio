@@ -6,6 +6,7 @@ import gitIcon from '../assets/git.svg';
 import githubIcon from '../assets/github.svg';
 import vsCodeIcon from '../assets/visualStudioCode.svg';
 import tailwindcssIcon from '../assets/tailwindcss.svg';
+import viteJS from '../assets/Vitejs.svg'
 
 export default function SunIcon({properties}){
     return(
@@ -22,43 +23,47 @@ export function MoonIcon({properties}){
         </svg>
     )
 }
-export function ReactIcon({properties}){
-    return(
-       <img className={properties} src={reactIcon} alt="React icon" />
-    )
-}
-export function JsIcon({properties}){
-    return(
-       <img className={properties} src={jsIcon} alt="JavaScript icon" />
-    )
-}   
-export function HtmlIcon({properties}){
-    return(
-       <img className={properties} src={htmlIcon} alt="Html icon" />
-    )
-}
-export function CssIcon({properties}){
-    return(
-       <img className={properties} src={cssIcon} alt="Css icon" />
-    )
-}
-export function TailwindcssIcon({properties}){
-    return(
-       <img className={properties} src={tailwindcssIcon} alt="tailwindcss icon" />
-    )
-}
-export function GitIcon({properties}){
-    return(
-       <img className={properties} src={gitIcon} alt="Git icon" />
-    )
-}
-export function GithubIcon({properties}){
-    return(
-       <img className={properties} src={githubIcon} alt="Github icon" />
-    )
-}
-export function VsCodeIcon({properties}){
-    return(
-       <img className={properties} src={vsCodeIcon} alt="Visual Studio Code icon" />
-    )
-}
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const habilitiesIcons= [
+    {
+        srcImg: reactIcon,
+        description:'Ícono de React'
+    }
+    ,
+    {
+        srcImg: htmlIcon,
+        description:'Ícono de Html'
+    },
+    {
+        srcImg: cssIcon,
+        description:'Ícono de Css'
+    },
+    {
+        srcImg: vsCodeIcon,
+        description:'Ícono de VsCode'
+    },
+    {   
+        srcImg: gitIcon,
+        description:'Ícono de Git'
+    },
+    {   
+
+        srcImg: githubIcon,
+        description:'Ícono de Github'
+    },
+    {
+        srcImg: jsIcon,
+        description:'Ícono de JavaScript'
+    },
+    {
+        srcImg: tailwindcssIcon,
+        description:'Ícono de Tailwindcss'
+    },
+    
+    {
+        srcImg: viteJS,
+        description:'Ícono de Vite'
+    },
+    
+]
