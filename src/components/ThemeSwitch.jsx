@@ -31,9 +31,9 @@ export default function ThemeSwitcher() {
     >
       
       {isDark ? (
-        <SunIcon properties={"w-full p-1 fill-current text-gray-950 cursor-pointer dark:text-gray-50"}/>
+        <SunIcon properties={"w-full p-1 fill-current text-gray-950 cursor-pointer dark:text-gray-50 hover:animate-wiggle"}/>
       ) :(
-        <MoonIcon properties={"w-full p-1 fill-current text-gray-950 cursor-pointer dark:text-gray-50"} />) }
+        <MoonIcon properties={"w-full p-1 fill-current text-gray-950 cursor-pointer dark:text-gray-50 hover:animate-wiggle"} />) }
     </button>
   );
 }
