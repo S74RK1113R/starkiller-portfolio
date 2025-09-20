@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Tags from "./tags";
+import Tags from "./Tags";
 
 export default function Card({proyectName,proyectDescription,img, imgDescription, tecnologies, href}) {
     return(
