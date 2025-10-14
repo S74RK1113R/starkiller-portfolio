@@ -3,7 +3,7 @@ import Tags from "./Tags";
 
 export default function Card({proyectName,proyectDescription,img, imgDescription, tecnologies, href}) {
     return(
-        <div className=" mx-auto sm:max-w-100 space-y-4 border-2 p-5 rounded-2xl shadow-md shadow-gray-950/50">
+        <div className=" mx-auto sm:max-w-100 space-y-4 border-2 p-5 rounded-2xl shadow-md shadow-gray-950/50 dark:shadow-gray-100/40">
             <div className="max-h-60 overflow-y-scroll rounded-2xl scroll-hidden">
                 <img src={img} alt={imgDescription} />
             </div>
