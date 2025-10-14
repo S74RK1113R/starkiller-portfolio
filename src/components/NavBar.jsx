@@ -1,13 +1,14 @@
 import ThemeSwitcher from "./ThemeSwitch";
-
+import deadStar from "/dead_star.svg";
 export default function NavBar() {
     return(
         <>
-            <nav className="sticky top-0 w-full flex flex-row justify-end  gap-4 p-2 pr-5 bg-gray-200/20  backdrop-blur-xs border-b-1 border-gray-800 dark:bg-gray-900/10 dark:border-b-gray-500">
-                <ul>
-                    <li>
-                        
+            <nav className="fixed flex flex-row bg-transparent backdrop-blur-xs w-full py-2 px-5 justify-end border-b-2 border-b-zinc-500 dark:border-b-zinc-200">
+                <ul className="flex flex-row w-full">
+                    <li className="w-10">
+                        <img src={deadStar} alt="Dead Star icon" />
                     </li>
+                    <div className="flex-1"></div>
                     <li>
                         <ThemeSwitcher/>
                     </li>

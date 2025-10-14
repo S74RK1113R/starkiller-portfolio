@@ -3,17 +3,24 @@ import Button from "../components/Button";
 import DefaultLayout from "../layouts/DefaultLayout";
 import { proyectInformation } from "../proyects/ProyectInformation";
 import Card from "../components/Card";
-import { habilitiesIcons } from "../icons/Icons";
+import { ArrowDown, habilitiesIcons } from "../icons/Icons";
 import Icons from "../components/Icons";
+import { useRef } from "react";
 
 
 
 export default function Index() {
+
+    const projects=useRef()
+
+    function handleClicktoProjects(){
+        projects.current.scrollIntoView({ behavior: "smooth", block: "start", inline: "start" })
+    }
     
     return(
         <DefaultLayout>
             <Section>
-                <div className="h-[90vh] space-y-5 flex flex-col justify-center items-center">
+                <div className="h-screen space-y-5 flex flex-col justify-center items-center">
                     <h1 className="sm:text-2xl">Hola, soy <b className="text-red-600 dark:text-red-400 text-2xl sm:text-3xl">S74RK1113R</b> </h1>
                     <b className="text-2xl font-extrabold sm:text-3xl">Desarollador <span></span> frontend</b>
                     <h3 className="text-xl text-gray-800 dark:text-gray-400 sm:text-2xl">Enfocado en la creación de sitios web atractivos y escalables con React.</h3>
@@ -21,11 +28,15 @@ export default function Index() {
                     <Button link={'https://github.com/S74RK1113R'}>
                         Repositorio
                     </Button>
+
+                    <div className="absolute bottom-0" onClick={handleClicktoProjects}>
+                        <ArrowDown classProperties={'current-color text-neutral-900 dark:text-zinc-300 w-20 animate-bounce'}/>
+                    </div>
                 </div>
             </Section>
 
             <Section>
-                <div className="w-full">
+                <div ref={projects} className="w-full">
                     <p className="text-left">
                         <b>
                             Proyectos
