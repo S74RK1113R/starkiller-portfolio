@@ -35,8 +35,8 @@ export default function Index() {
       aboutMeRef={aboutMe}
       contactRef={contact}
     >
-      <section className="relative flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
-        <div className="w-full h-screen space-y-5 flex flex-col justify-center items-center">
+      <section className="relative min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
+        <div className="w-full space-y-5 flex flex-col justify-center items-center">
           <h2 className="sm:text-2xl">
             Hola, soy{" "}
             <span className="text-red-600 dark:text-red-400 text-2xl sm:text-3xl font-bold">
