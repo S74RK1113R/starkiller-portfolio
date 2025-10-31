@@ -27,3 +27,20 @@ b{
 .scroll-hidden::-webkit-scrollbar{
     display:none;
 }
+
+.pin-bar-right-rotate{
+  position: absolute;
+  transform:rotate(45deg)  
+}
+
+.pin-bar-left-rotate{
+  position: absolute;
+  transform:rotate(-45deg)
+}
+.pin-bar-middle-hide{
+  opacity:0 ;
+}
+.toggle-mobile-menu{
+  scale: 1;
+  opacity: 1;
+}

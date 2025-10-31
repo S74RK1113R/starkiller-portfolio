@@ -1,11 +1,13 @@
 import NavBar from '../components/NavBar'
 
-export default function DefaultLayout({children}) {
+export default function DefaultLayout({children, projectRef, aboutMeRef, skillsRef, contactRef}) {
     return (   
-        <div className="relative h-screen flex flex-col items-center transition-all duration-200">
-            <NavBar />
+        <div className="relative flex flex-col items-center transition-all duration-200">
+            <header className='w-full'>
+                <NavBar projectRef={projectRef} aboutMeRef={aboutMeRef} skillsRef={skillsRef} contactRef={contactRef} />
+            </header>
 
-            <main className="flex-1 w-full space-y-8 p-5 sm:max-w-7/12 md:max-w-8/12 mx-auto dark:bg-gray-900">
+            <main className="flex-1 w-full px-5 md:max-w-7/12 lg:max-w-8/12 xl:max-w-6/12 mx-auto dark:bg-gray-900">
                 {children}
             </main>
 

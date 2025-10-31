@@ -1,7 +1,7 @@
 export default function Tags({children}) {
     return(
-        <div className="text-base px-2 bg-gray-950 text-gray-50 rounded-full uppercase dark:text-gray-950 dark:bg-gray-100 font-bold">
-            {children}
+        <div className="w-10 bg-gray-950 rounded-full dark:bg-neutral-100 " title={children.description}>
+            <img className="w-6 h-6 object-center m-2 rounded-md" src={children.srcImg} alt={children.description} />
         </div>
     )
 }
