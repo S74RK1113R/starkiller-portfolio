@@ -54,12 +54,12 @@ export default function Index() {
           <Button link={"https://github.com/S74RK1113R"}>Repositorio</Button>
 
           <div
-            className="absolute bottom-0 -z-0"
+            className="absolute bottom-5 sm:bottom-0 -z-0"
             onClick={handleClicktoProjects}
           >
             <ArrowDown
               classProperties={
-                "current-color text-neutral-900 dark:text-zinc-300 w-20 animate-bounce cursor-pointer"
+                "current-color text-neutral-900 dark:text-zinc-300 w-15 animate-bounce cursor-pointer"
               }
             />
           </div>
