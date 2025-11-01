@@ -34,10 +34,10 @@ export default function NavBar({
   }
   return (
     <nav className="fixed flex flex-row bg-transparent backdrop-blur-xs w-full py-2 px-5 justify-end border-b-2 border-b-zinc-500 dark:border-b-zinc-200 z-20">
-      <ul className="flex flex-row w-full">
-        <li className="w-10">
+      <div className="flex flex-row w-full">
+        <div className="w-10">
           <img src={deadStar} alt="Dead Star icon" />
-        </li>
+        </div>
 
         {/* Pc nav menu */}
         <div className="flex-1">
@@ -57,9 +57,9 @@ export default function NavBar({
           </ul>
         </div>
 
-        <li>
+        <div>
           <ThemeSwitcher />
-        </li>
+        </div>
 
         {/* Mobile nav menu */}
         <div
@@ -93,7 +93,7 @@ export default function NavBar({
             </ul>
           </div>
         </div>
-      </ul>
+      </div>
     </nav>
   );
 }
