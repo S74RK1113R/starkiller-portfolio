@@ -35,7 +35,7 @@ export default function Index() {
       aboutMeRef={aboutMe}
       contactRef={contact}
     >
-      <section className="relative min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
+      <section className="min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
         <div className="w-full space-y-5 flex flex-col justify-center items-center">
           <h2 className="sm:text-2xl">
             Hola, soy{" "}
@@ -54,7 +54,7 @@ export default function Index() {
           <Button link={"https://github.com/S74RK1113R"}>Repositorio</Button>
 
           <div
-            className="absolute bottom-5 sm:bottom-0 -z-0"
+            className="absolute bottom-0 -z-0"
             onClick={handleClicktoProjects}
           >
             <ArrowDown
@@ -68,9 +68,9 @@ export default function Index() {
 
       <Section>
         <div ref={projects} className="w-full">
-          <p className="text-left">
-            <h1 className="font-bold sm:text-2xl">Proyectos</h1>
-          </p>
+          
+          <h1 className="font-bold sm:text-2xl text-left">Proyectos</h1>
+          
           <div
             aria-label="Proyect cards"
             className="grid justify-center, place-items-center pt-5 gap-5 lg:grid-cols-1 md:gap-5"

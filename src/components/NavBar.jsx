@@ -72,7 +72,7 @@ export default function NavBar({
 
           <div
             id="mobile-menu"
-            className="absolute bg-neutral-100/90 dark:bg-neutral-950/90 border-2 dark:border-neutral-100 border-neutral-950 top-12 p-5 right-0 rounded-md transition-transform duration-300 z-0 scale-0"
+            className="absolute bg-neutral-100/90 dark:bg-neutral-950/90 backdrop-blur-xs border-2 dark:border-neutral-100 border-neutral-950 top-12 p-5 right-0 rounded-md transition-transform duration-300 z-0 scale-0"
           >
             <ul className="flex flex-col items-center justify-center gap-5 w-full h-full text-zinc-950  dark:text-neutral-100 font-bold text-nowrap">
               <li onClick={handleScrollIntoProyects} className="cursor-pointer">
@@ -95,13 +95,5 @@ export default function NavBar({
         </div>
       </ul>
     </nav>
-  );
-}
-
-export function Link({ name, href }) {
-  return (
-    <a className=" hover:text-red-400 text-xl font-bold" href={href}>
-      {name}
-    </a>
   );
 }

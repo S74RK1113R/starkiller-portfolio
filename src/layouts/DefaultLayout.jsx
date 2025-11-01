@@ -2,12 +2,12 @@ import NavBar from '../components/NavBar'
 
 export default function DefaultLayout({children, projectRef, aboutMeRef, skillsRef, contactRef}) {
     return (   
-        <div className="relative flex flex-col items-center transition-all duration-200">
+        <div className="flex flex-col items-center transition-all duration-200">
             <header className='w-full'>
                 <NavBar projectRef={projectRef} aboutMeRef={aboutMeRef} skillsRef={skillsRef} contactRef={contactRef} />
             </header>
 
-            <main className="flex-1 w-full px-5 md:max-w-7/12 lg:max-w-8/12 xl:max-w-6/12 mx-auto dark:bg-gray-900">
+            <main className="min-h-screen flex-1 w-full px-5 md:max-w-7/12 lg:max-w-8/12 xl:max-w-6/12 mx-auto dark:bg-gray-900">
                 {children}
             </main>
 
