@@ -46,10 +46,10 @@ export default function Index() {
           <h1 className="text-2xl font-extrabold sm:text-3xl">
             Desarollador <span></span> frontend
           </h1>
-          <h3 className="text-xl text-gray-800 dark:text-gray-400 sm:text-2xl">
+          <h2 className="text-xl text-gray-800 dark:text-gray-400 sm:text-2xl">
             Enfocado en la creación de sitios web atractivos y escalables con
             React.
-          </h3>
+          </h2>
 
           <Button link={"https://github.com/S74RK1113R"}>Repositorio</Button>
 
