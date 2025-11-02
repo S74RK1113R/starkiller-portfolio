@@ -1,5 +1,5 @@
-import plantrek from "../assets/Plantrek .png";
-import dynamJob from "../assets/DynamJobs.png"
+import plantrek from "../assets/projects/Plantrek .png";
+import dynamJob from "../assets/projects/DynamJobs.png"
 import { habilitiesIcons as hbi } from "../icons/Icons";
 export const proyectInformation = [
   {

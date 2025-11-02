@@ -15,6 +15,7 @@ import Icons from "../components/Icons";
 import { useRef } from "react";
 
 export default function Index() {
+  const home = useRef()
   const projects = useRef();
   const skills = useRef();
   const aboutMe = useRef();
@@ -30,12 +31,13 @@ export default function Index() {
 
   return (
     <DefaultLayout
+      homeRef={home}
       projectRef={projects}
       skillsRef={skills}
       aboutMeRef={aboutMe}
       contactRef={contact}
     >
-      <section className="min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
+      <section ref={home} className="min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
         <div className="w-full space-y-5 flex flex-col justify-center items-center">
           <h2 className="sm:text-2xl">
             Hola, soy{" "}
@@ -101,7 +103,8 @@ export default function Index() {
           <h1 className="font-bold text-xl sm:text-2xl">
             Habilidades y herramientas
           </h1>
-          <div className="mt-10 grid grid-cols-4 auto-cols-fr auto-rows-fr place-items-center gap-1 sm:gap-5">
+
+          <div className="mt-10 grid grid-cols-4 auto-cols-fr auto-rows-fr place-items-center gap-0 sm:gap-5">
             {Object.values(habilitiesIcons).map((data, idx) => {
               return (
                 <Icons

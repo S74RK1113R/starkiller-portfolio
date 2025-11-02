@@ -1,13 +1,13 @@
-import reactIcon from '../assets/react.svg';
-import htmlIcon from '../assets/html.svg';
-import cssIcon from '../assets/css.svg'; 
-import jsIcon from '../assets/javaScript.svg'; 
-import gitIcon from '../assets/git.svg';
-import githubIcon from '../assets/github.svg';
-import vsCodeIcon from '../assets/visualStudioCode.svg';
-import tailwindcssIcon from '../assets/tailwindcss.svg';
-import viteJS from '../assets/Vitejs.svg'
-import gsap from "../assets/gsap.svg"
+import reactIcon from '../assets/skillsAndTools/react.svg';
+import htmlIcon from '../assets/skillsAndTools/html.svg';
+import cssIcon from '../assets/skillsAndTools/css.svg'; 
+import jsIcon from '../assets/skillsAndTools/javaScript.svg'; 
+import gitIcon from '../assets/skillsAndTools/git.svg';
+import githubIcon from '../assets/skillsAndTools/github.svg';
+import vsCodeIcon from '../assets/skillsAndTools/visualStudioCode.svg';
+import tailwindcssIcon from '../assets/skillsAndTools/tailwindcss.svg';
+import viteJS from '../assets/skillsAndTools/Vitejs.svg'
+import gsap from "../assets/skillsAndTools/gsap.svg"
 
 export default function SunIcon({properties}){
     return(

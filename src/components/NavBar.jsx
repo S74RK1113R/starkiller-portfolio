@@ -2,11 +2,11 @@ import ThemeSwitcher from "./ThemeSwitch";
 import deadStar from "/dead_star.svg";
 import NavLinks from "./NavLinks";
 
-export default function NavBar({
+export default function NavBar({homeRef,
   projectRef,
   aboutMeRef,
   skillsRef,
-  contactRef,
+  contactRef
 }) {
   function handleMobileMenuClick() {
     const pingbar1 = document.querySelector(".pinbar-1");
@@ -19,7 +19,9 @@ export default function NavBar({
     pingbar3.classList.toggle("pin-bar-left-rotate");
     mobileMenu.classList.toggle("toggle-mobile-menu");
   }
-
+  function handleScrollIntoHome(){
+    homeRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' });
+  }
   function handleScrollIntoProyects() {
     projectRef.current.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' });
   }
@@ -35,7 +37,7 @@ export default function NavBar({
   return (
     <nav className="fixed flex flex-row bg-transparent backdrop-blur-xs w-full py-2 px-5 justify-end border-b-2 border-b-zinc-500 dark:border-b-zinc-200 z-20">
       <div className="flex flex-row w-full">
-        <div className="w-10">
+        <div className="w-10" onClick={handleScrollIntoHome}>
           <img src={deadStar} alt="Dead Star icon" />
         </div>
 
