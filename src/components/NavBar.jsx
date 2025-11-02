@@ -37,7 +37,7 @@ export default function NavBar({homeRef,
   return (
     <nav className="fixed flex flex-row bg-transparent backdrop-blur-xs w-full py-2 px-5 justify-end border-b-2 border-b-zinc-500 dark:border-b-zinc-200 z-20">
       <div className="flex flex-row w-full">
-        <div className="w-10" onClick={handleScrollIntoHome}>
+        <div className="w-10 cursor-pointer" title="Navegar al inico de la página" onClick={handleScrollIntoHome}>
           <img src={deadStar} alt="Dead Star icon" />
         </div>
 
