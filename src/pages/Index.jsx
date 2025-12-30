@@ -3,18 +3,18 @@ import Button from "../components/Button";
 import DefaultLayout from "../layouts/DefaultLayout";
 import { proyectInformation } from "../proyects/ProyectInformation";
 import Card from "../components/Card";
-import {
-  ArrowDown,
-  GithubSquare,
-  Gmail,
-  habilitiesIcons,
-  LinkedinSquare,
-  Whatsapp,
-} from "../icons/Icons";
+import {ArrowDown,GithubSquare,Gmail,habilitiesIcons,LinkedinSquare,Whatsapp,} from "../icons/Icons";
 import Icons from "../components/Icons";
 import { useRef } from "react";
+import { useLang } from "../context/LangContextProvider";
+import {ES} from "../lang/ES";
+import {EN} from "../lang/EN";
 
 export default function Index() {
+  const {lang} = useLang();
+
+  const pageLang = lang ? EN : ES;
+
   const home = useRef()
   const projects = useRef();
   const skills = useRef();
@@ -40,20 +40,19 @@ export default function Index() {
       <section ref={home} className="font-mono min-h-screen flex flex-col text-xl dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
         <div className="w-full space-y-5 flex flex-col justify-center items-center">
           <h2 className="sm:text-2xl ">
-            Hola, soy{" "}
+            {pageLang.presentationGreeting}
             <span className="text-red-600 dark:text-red-400 text-2xl sm:text-3xl font-bold">
-              S74RK1113R
+              {pageLang.presentationName}
             </span>{" "}
           </h2>
           <h1 className="text-2xl font-extrabold sm:text-3xl ">
-            Desarollador <span></span> frontend
+            {pageLang.presentationRole}
           </h1>
           <h2 className="text-xl text-gray-800 dark:text-gray-400 sm:text-2xl">
-            Enfocado en la creación de sitios web atractivos y escalables con
-            React.
+            {pageLang.aboutMeText}
           </h2>
 
-          <Button link={"https://github.com/S74RK1113R"}>Repositorio</Button>
+          <Button link={"https://github.com/S74RK1113R"}>{pageLang.repositoryButton}</Button>
 
           <div
             className="absolute bottom-0 z-0"
@@ -71,7 +70,7 @@ export default function Index() {
       <Section>
         <div ref={projects} className="w-full">
           
-          <h1 className="font-bold sm:text-2xl text-left">Proyectos</h1>
+          <h1 className="font-bold sm:text-2xl text-left">{pageLang.proyectInformationTitle}</h1>
           
           <div
             aria-label="Proyect cards"
@@ -83,6 +82,7 @@ export default function Index() {
                   key={data.id}
                   img={data.img}
                   proyectName={data.name}
+                  enProyectDescription={data.enDescription}
                   proyectDescription={data.description}
                   imgDescription={data.imgDescription}
                   tecnologies={data.tecnologies}
@@ -101,7 +101,7 @@ export default function Index() {
           aria-label="Habilidades y herramientas"
         >
           <h1 className="font-bold text-xl sm:text-2xl">
-            Habilidades y herramientas
+            {pageLang.skillsAndToolsTitle}
           </h1>
 
           <div className="mt-10 grid grid-cols-4 auto-cols-fr auto-rows-fr place-items-center gap-0 sm:gap-5">
@@ -121,31 +121,27 @@ export default function Index() {
 
       <Section>
         <div ref={aboutMe} className="text-left w-full text-lg">
-          <h1 className="font-bold text-xl sm:text-2xl">Sobre mí</h1>
+          <h1 className="font-bold text-xl sm:text-2xl">{pageLang.aboutMeTitle}</h1>
           <p>
-            Soy desarrollador frontend web graduado de Ingeniería Informática,
-            me gusta crear experiencias satisfactorias y sobre todo utilizar
-            buenas prácticas al desarrollar.
+            {pageLang.aboutMeInformationP1}
           </p>
           <br />
           <p>
-            También me gusta el diseño gráfico, donde he realizado pequeñas
-            tareas como personalización y creación de assets.
+            {pageLang.aboutMeInformationP2}
           </p>
 
           <br />
           <p>
-            Disfruto de aprender tecnologías nuevas y seguir mejorando cada día
-            mis habilidades como desarrollador.
+            {pageLang.aboutMeInformationP3}
           </p>
         </div>
       </Section>
 
       <Section>
         <div ref={contact} className="text-left w-full">
-          <h1 className="font-bold text-xl sm:text-2xl">Contáctame</h1>
+          <h1 className="font-bold text-xl sm:text-2xl">{pageLang.contactMeTitle}</h1>
           <p className="text-lg mt-10">
-            Si te gusta mi trabajo puedes contactarme a cualquiera de mis redes.
+            {pageLang.contactMeInformation}
           </p>
           <div className="flex flex-row mt-5 gap-5 w-full justify-center">
             <a href="https://wa.link/ywwvk8" target="_blank" title="Whatsapp">

@@ -1,0 +1,20 @@
+export const ES = {
+    menuOption1: "Proyectos",
+    menuOption2: "Habilidades y herramientas",
+    menuOption3: "Sobre mí",
+    menuOption4: "Contáctame",
+    presentationGreeting: "Hola, soy ",
+    presentationName: "S74RK1113R",
+    presentationRole: "Desarollador frontend",
+    aboutMeText: `Enfocado en la creación de sitios web atractivos y escalables con React.`,
+    repositoryButton: "Repositorio",
+    seeProyectButton: "Ver proyecto",
+    proyectInformationTitle: "Proyectos",
+    skillsAndToolsTitle: "Habilidades y herramientas",
+    aboutMeTitle: "Sobre mí",
+    contactMeTitle: "Contáctame",
+    aboutMeInformationP1:"Soy desarrollador frontend web graduado de Ingeniería Informática, me gusta crear experiencias satisfactorias y sobre todo utilizar buenas prácticas al desarrollar.",
+    aboutMeInformationP2:"También me gusta el diseño gráfico, donde he realizado pequeñas tareas como personalización y creación de assets.",
+    aboutMeInformationP3:"Disfruto de aprender tecnologías nuevas y seguir mejorando cada día mis habilidades como desarrollador.",
+    contactMeInformation:"Si te gusta mi trabajo puedes contactarme a cualquiera de mis redes."
+}

@@ -13,6 +13,8 @@ export const proyectInformation = [
     ],
     description:
       "Esta web fue creada para la aplicación plantrek actualmente disponible en Play Store.",
+    enDescription:
+      "This website was created for the plantrek app currently available on Play Store.",
     img: plantrek,
     href: "https://www.plantrek.app",
     imgDescription: "Plantrek web img",
@@ -29,6 +31,8 @@ export const proyectInformation = [
     ],
     description:
       "Página creada para los CEO de Dynam Jobs",
+    enDescription:
+      "Website created for the CEO of Dynam Jobs",
     img: dynamJob,
     href: "https://www.dynamjobs.com/",
     imgDescription: "Dynam jobs web image",

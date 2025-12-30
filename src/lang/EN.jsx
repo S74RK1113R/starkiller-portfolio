@@ -1,0 +1,20 @@
+export const EN = {
+    menuOption1: "Projects",
+    menuOption2: "Skills and tools",
+    menuOption3: "About me",
+    menuOption4: "Contact me",
+    presentationGreeting: "Hello, I'm ",
+    presentationName: "S74RK1113R",
+    presentationRole: "Frontend developer",
+    aboutMeText: `Focused on creating attractive and scalable websites with React.`,
+    repositoryButton: "Repository",
+    seeProyectButton: "View project",
+    proyectInformationTitle: "Projects",
+    skillsAndToolsTitle: "Skills and tools",
+    aboutMeTitle: "About me",
+    contactMeTitle: "Contact me",
+    aboutMeInformationP1: "I'm a frontend web developer graduated in Computer Engineering; I enjoy creating satisfying experiences and, above all, using best practices when developing.",
+    aboutMeInformationP2: "I also enjoy graphic design, where I've done small tasks like customization and creating assets.",
+    aboutMeInformationP3: "I enjoy learning new technologies and improving my skills as a developer every day.",
+    contactMeInformation: "If you like my work, you can contact me through any of my social accounts."
+}

@@ -1,9 +1,14 @@
 import Button from "./Button";
 import Tags from "./Tags";
+import {ES} from "../lang/ES";
+import {EN} from "../lang/EN";
+import { useLang } from "../context/LangContextProvider";
 
-export default function Card({proyectName,proyectDescription,img, imgDescription, tecnologies, href}) {
+export default function Card({proyectName,proyectDescription, enProyectDescription,img, imgDescription, tecnologies, href}) {
+    const {lang} = useLang();
+    const pageLang = lang ? EN : ES;
     return(
-        <div className="lg:w-full lg:flex lg:flex-row xl:max-w-[700px] md:gap-5 mx-auto h-full space-y-4 border-2 p-5 rounded-2xl shadow-md shadow-gray-950/50 dark:shadow-gray-100/40">
+        <div className="lg:w-full lg:flex lg:flex-row xl:max-w-175 md:gap-5 mx-auto h-full space-y-4 border-2 p-5 rounded-2xl shadow-md shadow-gray-950/50 dark:shadow-gray-100/40">
             <div className="max-h-60 lg:max-w-80 overflow-y-scroll rounded-2xl scroll-hidden">
                 <img src={img} alt={imgDescription} />
             </div>
@@ -12,7 +17,7 @@ export default function Card({proyectName,proyectDescription,img, imgDescription
                 
                 <div className="flex-1 m-3">
                     <h1 className="font-extrabold text-[18px] uppercase">{proyectName}</h1>
-                    <p className="text-sm">{proyectDescription}</p>
+                    <p className="text-sm">{lang ? enProyectDescription : proyectDescription }</p>
                 </div>
 
                 <div className="grid grid-cols-5 gap-3">
@@ -28,7 +33,7 @@ export default function Card({proyectName,proyectDescription,img, imgDescription
                 
                 <div className="p-4">
                    <Button link={href}>
-                    Ver proyecto
+                    {pageLang.seeProyectButton}
                     </Button> 
                 </div>
             </div>

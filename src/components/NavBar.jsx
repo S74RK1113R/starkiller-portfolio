@@ -1,6 +1,10 @@
 import ThemeSwitcher from "./ThemeSwitch";
 import deadStar from "/dead_star.svg";
 import NavLinks from "./NavLinks";
+import {ES} from "../lang/ES";
+import {EN} from "../lang/EN";
+import { useLang } from "../context/LangContextProvider";
+import LangSwitcher from "./LangSwitcher";
 
 export default function NavBar({homeRef,
   projectRef,
@@ -8,6 +12,9 @@ export default function NavBar({homeRef,
   skillsRef,
   contactRef
 }) {
+  const {lang} = useLang();
+
+  const pageLang = lang ? EN : ES;
   function handleMobileMenuClick() {
     const pingbar1 = document.querySelector(".pinbar-1");
     const pingbar2 = document.querySelector(".pinbar-2");
@@ -37,7 +44,7 @@ export default function NavBar({homeRef,
   return (
     <nav className="fixed flex flex-row bg-transparent backdrop-blur-xs w-full py-2 px-5 justify-end border-b-2 border-b-zinc-500 dark:border-b-zinc-200 z-20">
       <div className="flex flex-row w-full">
-        <div className="w-10 cursor-pointer" title="Navegar al inico de la página" onClick={handleScrollIntoHome}>
+        <div className="w-10 cursor-pointer" title={`${lang ? "Navigate to the home page" : "Navegar al inicio de la página" }`} onClick={handleScrollIntoHome}>
           <img src={deadStar} alt="Dead Star icon" />
         </div>
 
@@ -45,20 +52,23 @@ export default function NavBar({homeRef,
         <div className="flex-1">
           <ul className="hidden md:flex flex-row items-center justify-center gap-5 w-full h-full text-zinc-950  dark:text-neutral-100 font-bold">
             <NavLinks onclickFunction={handleScrollIntoProyects}>
-              Proyectos
+              {pageLang.menuOption1}
             </NavLinks>
             <NavLinks onclickFunction={handleScrollIntoSkills}>
-              Habilidades y herramientas
+              {pageLang.menuOption2}
             </NavLinks>
             <NavLinks onclickFunction={handleScrollIntoAboutMe}>
-              Sobre mí
+              {pageLang.menuOption3}
             </NavLinks>
             <NavLinks onclickFunction={handleScrollIntoContactMe}>
-              Contáctame
+              {pageLang.menuOption4}
             </NavLinks>
           </ul>
         </div>
 
+        <div>
+          <LangSwitcher/>
+        </div>
         <div>
           <ThemeSwitcher />
         </div>
@@ -78,19 +88,19 @@ export default function NavBar({homeRef,
           >
             <ul className="flex flex-col items-center justify-center gap-5 w-full h-full text-zinc-950  dark:text-neutral-100 font-bold text-nowrap">
               <li onClick={handleScrollIntoProyects} className="cursor-pointer">
-                Proyectos
+                {pageLang.menuOption1}
               </li>
               <li onClick={handleScrollIntoSkills} className="cursor-pointer">
-                Habilidades y herramientas
+                {pageLang.menuOption2}
               </li>
               <li onClick={handleScrollIntoAboutMe} className="cursor-pointer">
-                Sobre mí
+                {pageLang.menuOption3}
               </li>
               <li
                 onClick={handleScrollIntoContactMe}
                 className="cursor-pointer"
               >
-                Contáctame
+                {pageLang.menuOption4}
               </li>
             </ul>
           </div>
