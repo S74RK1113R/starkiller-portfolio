@@ -2,9 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://starkiller-portfolio.vercel.app/</loc>
-    <lastmod>2025-11-11</lastmod>
+    <lastmod>2025-12-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+</url>
+  <url>
+    <loc>https://starkiller-portfolio.vercel.app/#proyectos</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
 
+  <url>
+    <loc>https://starkiller-portfolio.vercel.app/#habilidades</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://starkiller-portfolio.vercel.app/#sobre-mi</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://starkiller-portfolio.vercel.app/#contacto</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
 </urlset>
