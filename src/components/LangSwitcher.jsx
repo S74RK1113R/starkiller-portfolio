@@ -3,8 +3,9 @@ import { Spanishflag, UnitedKingdom } from "../icons/Icons";
 
 export default function LangSwitcher() {
     const {lang, setLang} = useLang();
+
     function toggleLang(){
-        setLang(!lang);
+      setLang(!lang)
     }
 
   return (
