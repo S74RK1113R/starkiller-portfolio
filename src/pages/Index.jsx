@@ -37,15 +37,15 @@ export default function Index() {
       aboutMeRef={aboutMe}
       contactRef={contact}
     >
-      <section ref={home} className="min-h-screen flex flex-col text-xl font-mono dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
+      <section ref={home} className="font-mono min-h-screen flex flex-col text-xl dark:text-gray-100 text-center sm:text-2xl items-center justify-center ">
         <div className="w-full space-y-5 flex flex-col justify-center items-center">
-          <h2 className="sm:text-2xl">
+          <h2 className="sm:text-2xl ">
             Hola, soy{" "}
             <span className="text-red-600 dark:text-red-400 text-2xl sm:text-3xl font-bold">
               S74RK1113R
             </span>{" "}
           </h2>
-          <h1 className="text-2xl font-extrabold sm:text-3xl">
+          <h1 className="text-2xl font-extrabold sm:text-3xl ">
             Desarollador <span></span> frontend
           </h1>
           <h2 className="text-xl text-gray-800 dark:text-gray-400 sm:text-2xl">
@@ -56,7 +56,7 @@ export default function Index() {
           <Button link={"https://github.com/S74RK1113R"}>Repositorio</Button>
 
           <div
-            className="absolute bottom-0 -z-0"
+            className="absolute bottom-0 z-0"
             onClick={handleClicktoProjects}
           >
             <ArrowDown
