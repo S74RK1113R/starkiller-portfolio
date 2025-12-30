@@ -6,7 +6,6 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-</url>
   <url>
     <loc>https://starkiller-portfolio.vercel.app/#proyectos</loc>
     <lastmod>2025-12-30</lastmod>
@@ -35,5 +34,4 @@
     <priority>0.60</priority>
   </url>
 
-</urlset>
 </urlset>
