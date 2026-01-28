@@ -14,7 +14,7 @@ export default function DefaultLayout({children, projectRef, aboutMeRef, skillsR
             <footer className="p-3 flex flex-col w-full items-center justify-center border-t-2 border-t-gray-800 dark:bg-gray-900
             dark:border-t-gray-500">
                 <p className='flex flex-row gap-5 font-bold text-xl items-center justify-center text-gray-950 dark:text-gray-100'>
-                    <span className='text-2xl text-red-600 block dark:text-red-400'>©2025</span>
+                    <span className='text-2xl text-red-600 block dark:text-red-400'>©2026</span>
                     S74RK1113R
                 </p>
             </footer>
