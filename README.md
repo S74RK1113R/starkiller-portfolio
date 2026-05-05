@@ -6,7 +6,4 @@ This is my personal portfolio.
     pnpm install
 # URL
 
-``` bash
-https://starkiller-portfolio.vercer.app
-
-```
+[See my portfolio](https://starkiller-portfolio.vercer.app)
