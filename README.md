@@ -6,4 +6,4 @@ This is my personal portfolio.
     pnpm install
 # URL
 
-[See my portfolio](https://starkiller-portfolio.vercer.app)
+[See my portfolio](https://starkiller-portfolio.vercel.app)
