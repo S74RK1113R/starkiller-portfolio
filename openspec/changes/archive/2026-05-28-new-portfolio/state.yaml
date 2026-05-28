@@ -1,0 +1,6 @@
+# Change State File - survives compaction
+change_name: new-portfolio
+status: initialized
+created_at: 2026-05-27
+updated_at: 2026-05-27
+phase: tasks
